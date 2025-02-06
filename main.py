@@ -43,9 +43,9 @@ if __name__ == "__main__":
     address_book.add_contact(contact1)
     address_book.add_contact(contact2)
 
-    address_book.save_to_file("69.json")
+    address_book.save_to_file("data.json")
 
-    loaded_address_book = AddressBook.load_from_file("69.json")
+    loaded_address_book = AddressBook.load_from_file("data.json")
 
     query = "John"
     results = loaded_address_book.search(query)
